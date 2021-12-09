@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#a1").click(function(){
+                $(".header-button h1").slideToggle();
+
+                $(document.getElementById('a1').innerHTML=Date()).slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <input type="checkbox">
+
+        <div class="menu-icon">
+            <div class="menu-line">
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <li><a href="">Home</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100009581826718">Facebook</a></li>
+            <li><a href="https://www.instagram.com/vananh0627/">Instagram</a></li>
+        </div>
+        <div class="header-text">
+            <a href="" hidden>Open</a>
+        </div>
+        <div class="header-button">
+            <h1  hidden>Mình là Minh Anh 💖</h1>
+            <h1> Hello everybody </h1>
+            <button id="a1" type="button" " >Mở</button>
+        </br> 
+            <input id="a1" type="button" onclick="document.getElementById('a1').innerHTML=Date()" > 
+        </div>
+
+    </header>
+</body>
+</html>
+
